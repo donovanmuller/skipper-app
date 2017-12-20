@@ -1,0 +1,4 @@
+version: ${project.version}
+spec:
+  deploymentProperties:
+    spring.cloud.deployer.openshift.service.name: ${project.artifactId}
