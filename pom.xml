@@ -20,11 +20,10 @@
     <properties>
         <!-- Skipper package properties -->
         <skipper.tags>spring, spring cloud</skipper.tags>
-        <skipper.package.source.url>https://github.com/donovanmuller/</skipper.package.source.url>
-        <skipper.package.home.url>https://github.com/donovanmuller/</skipper.package.home.url>
+        <skipper.package.source.url>https://github.com/donovanmuller/skipper-app/</skipper.package.source.url>
+        <skipper.package.home.url>https://github.com/donovanmuller/skipper-app</skipper.package.home.url>
         <skipper.maintainer>https://github.com/donovanmuller</skipper.maintainer>
-        <!--<skipper.iconUrl>https://spring.io/img/homepage/icon-spring-cloud.svg</skipper.iconUrl>-->
-        <skipper.iconUrl>https://www.shareicon.net/download/2015/10/07/113633_open.svg</skipper.iconUrl>
+        <skipper.iconUrl>https://upload.wikimedia.org/wikipedia/commons/d/d7/Twemoji2_1f30d.svg</skipper.iconUrl>
 
         <nexus.url></nexus.url>
         <checkstyle.config.location>etc/checkstyle/checkstyle.xml</checkstyle.config.location>
@@ -119,6 +118,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.17</version>
                 <executions>
                     <execution>
                         <id>checkstyle-validation</id>
@@ -137,43 +137,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-        <pluginRepository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
 
     <distributionManagement>
         <snapshotRepository>
